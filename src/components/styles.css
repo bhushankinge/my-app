@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar {
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem;
+  overflow: hidden;
+  z-index: 20;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+.spacer {
+  flex: 1;
+}
+
+.navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  padding: 0 0.5rem;
+}
+.team_name {
+  margin-left: 1rem;
+}
+.team_name a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.nav_links a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.nav_links a:hover,
+.nav_links a:active {
+  color: #fa923f;
+}
+
+@media (max-width: 768px) {
+  .nav_links {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .Navbar_toggle_button {
+    display: none;
+  }
+
+  .team_name {
+    margin-left: 0;
+  }
+}
